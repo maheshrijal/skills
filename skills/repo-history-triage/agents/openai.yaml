@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo History Triage"
+  short_description: "Analyze repo history for risk signals"
+  default_prompt: "Use $repo-history-triage to analyze this repository's history and deliver an executive review of hotspots, ownership, momentum, and firefighting patterns."
