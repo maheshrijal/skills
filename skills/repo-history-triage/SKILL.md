@@ -30,16 +30,6 @@ python3 scripts/repo_history_triage.py \
 
 4. Synthesize the output. Do not stop at raw tables.
 
-## Local Verification
-
-Run the local test suite before shipping changes to this skill:
-
-```bash
-python3 -m unittest discover -s tests
-```
-
-The helper also degrades gracefully on empty or sparse repositories, so local fixtures should include those cases.
-
 ## Five-Lens Review
 
 ### 1. What Changes Most
