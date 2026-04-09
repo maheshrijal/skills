@@ -16,6 +16,8 @@ Analyze repository history through five lenses: what changes most, who built it,
 python3 scripts/repo_history_triage.py --repo /path/to/repo --format json
 ```
 
+This returns a machine-readable `lens_summary` with one structured summary per review lens, alongside the hotspot tables.
+
 3. If the result needs more human-readable detail, rerun in text mode:
 
 ```bash
@@ -27,6 +29,16 @@ python3 scripts/repo_history_triage.py \
 ```
 
 4. Synthesize the output. Do not stop at raw tables.
+
+## Local Verification
+
+Run the local test suite before shipping changes to this skill:
+
+```bash
+python3 -m unittest discover -s tests
+```
+
+The helper also degrades gracefully on empty or sparse repositories, so local fixtures should include those cases.
 
 ## Five-Lens Review
 
