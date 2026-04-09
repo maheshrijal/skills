@@ -16,6 +16,8 @@ Analyze repository history through five lenses: what changes most, who built it,
 python3 scripts/repo_history_triage.py --repo /path/to/repo --format json
 ```
 
+This returns a machine-readable `lens_summary` with one structured summary per review lens, alongside the hotspot tables.
+
 3. If the result needs more human-readable detail, rerun in text mode:
 
 ```bash
