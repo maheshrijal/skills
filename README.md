@@ -27,7 +27,8 @@ npx skills add maheshrijal/skills --skill repo-history-triage --global --yes
 
 ## Available Skills
 
-Currently this repo contains 2 skills:
+Currently this repo contains 3 skills:
 
 - `repo-history-triage`: Analyze Git repository history to surface churn hotspots, ownership concentration, bug-prone files, delivery momentum, and firefighting patterns.
 - `council`: Bring in Claude Opus, GPT Sol, and the strongest subscription-accessible Gemini model for review or feedback.
+- `sol-loop`: Use GPT Sol to review your code in a loop.

@@ -28,8 +28,8 @@ For a code review, ask each delegate for a score out of 10.
 Count each full review pass as one round.
 A fresh review after fixes starts a new round.
 
-If the work ends in a pull request, put the results in the PR description.
-Put this section before the model and harness line at the end:
+Put the review results in the final reply only, using this format.
+Do not post PR comments or add review results to the PR description:
 
 ```markdown
 ## Council review
@@ -44,8 +44,6 @@ Rounds: 2
 ```
 
 If a delegate gives no score, write `no score`. Do not invent one.
-If the PR is open, edit the description. Do not post a comment for this.
-If there is no PR, put the same results in the final reply only.
 
 If fixes are authorized and you agree with their recommendations, make the changes and request a fresh
 review after. Continue this process until all delegates are satisfied with the
