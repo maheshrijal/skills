@@ -27,8 +27,10 @@ npx skills add maheshrijal/skills --skill repo-history-triage --global --yes
 
 ## Available Skills
 
-Currently this repo contains 3 skills:
+Currently this repo contains 5 skills:
 
 - `repo-history-triage`: Analyze Git repository history to surface churn hotspots, ownership concentration, bug-prone files, delivery momentum, and firefighting patterns.
 - `council`: Bring in Claude Opus, GPT Sol, and the latest flagship Grok model available through the Grok CLI subscription for review or feedback.
 - `sol-loop`: Use GPT Sol to review your code in a loop.
+- `technical-writing`: Write and review technical docs, RFCs, READMEs, PR descriptions, and commit messages. From [pstack](https://github.com/cursor/plugins/tree/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/technical-writing), MIT licensed.
+- `unslop`: Edit writing to remove AI patterns while preserving meaning and tone. From [pstack](https://github.com/cursor/plugins/tree/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/unslop), MIT licensed.
