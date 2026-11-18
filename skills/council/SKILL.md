@@ -13,10 +13,10 @@ and explore new ideas, skip fixes to code being replaced.
 Bring in three delegates to help with the user's request, usually for review
 or feedback. Use three strong models at high reasoning effort. If the user's
 instructions name council members, use those. Otherwise use Claude Opus,
-GPT Sol, and GPT Astra.
+GPT-6.2 Sol (`gpt-6.2-sol`), and GPT-6.2 Astra (`gpt-6.2-astra`).
 
-In T3 Code, use `orchestrator_capabilities` to resolve Claude Opus, GPT Sol,
-and GPT Astra, then `delegate_task` to start those delegates. Elsewhere, use
+In T3 Code, use `orchestrator_capabilities` to resolve the selected models,
+then `delegate_task` to start those delegates. Elsewhere, use
 the harness's subagent tools or authenticated provider CLIs for them.
 If a council member is unavailable, report it instead of substituting.
 
@@ -45,8 +45,8 @@ Rounds: 2
 | Delegate | Round 1 | Round 2 |
 | --- | --- | --- |
 | Claude Opus | 7/10 | 9/10 |
-| GPT Sol | 8/10 | 10/10 |
-| GPT Astra | 7/10 | 9/10 |
+| GPT-6.2 Sol | 8/10 | 10/10 |
+| GPT-6.2 Astra | 7/10 | 9/10 |
 ```
 
 If a delegate gives no score, write `no score`. Do not invent one.
