@@ -13,8 +13,7 @@ and explore new ideas, skip fixes to code being replaced.
 Bring in three delegates to help with the user's request, usually for review
 or feedback. Use one strong model from each of three different providers, at
 high reasoning effort. If the user's instructions name council members, use
-those. Otherwise use Claude Opus, GPT Sol, and Gemini Neon through the
-Antigravity CLI (`agy --model gemini-4-neon`).
+those. Otherwise use Claude Opus, GPT Sol, and Gemini Neon.
 
 In T3 Code, use `orchestrator_capabilities` to resolve the models, then
 `delegate_task` to start one delegate per model in parallel. Elsewhere, use
