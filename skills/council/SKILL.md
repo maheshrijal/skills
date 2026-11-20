@@ -11,20 +11,15 @@ fixes until reviews return. If the user wants to discard the implementation
 and explore new ideas, skip fixes to code being replaced.
 
 Bring in three delegates to help with the user's request, usually for review
-or feedback. Use three strong models at high reasoning effort. If the user's
-instructions name council members, use those. Otherwise use Claude Opus,
-GPT Sol, and Gemini Neon through OpenCode.
+or feedback. Use one strong model from each of three different providers, at
+high reasoning effort. If the user's instructions name council members, use
+those. Otherwise use Claude Opus, GPT Sol, and Gemini Neon through the
+Antigravity CLI (`agy --model gemini-4-neon`).
 
-Run Gemini Neon through OpenCode's Aperture provider. Find its exact model ID
-with `opencode models | grep neon`, for example `aperture/gemini-4-neon`. Do
-not use an `openrouter/` or other non-Aperture Neon.
-
-In T3 Code, use `orchestrator_capabilities` to resolve Claude Opus and GPT Sol,
-then `delegate_task` to start all three delegates. For Neon, pass
-`providerInstanceId: "opencode"` with the Aperture model ID, even if
-`orchestrator_capabilities` does not list it. Elsewhere, use the harness's
-subagent tools or authenticated provider CLIs for Claude and GPT, and run Neon
-with `opencode run -m <model ID>`.
+In T3 Code, use `orchestrator_capabilities` to resolve Claude and GPT, then
+`delegate_task` to start those delegates. Elsewhere, use the harness's
+subagent tools or authenticated provider CLIs for them. Run Gemini in parallel
+through `agy`.
 If a council member is unavailable, report it instead of substituting.
 
 Give each delegate the request and relevant context. For review or feedback,
