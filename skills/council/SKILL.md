@@ -16,9 +16,9 @@ high reasoning effort. If the user's instructions name council members, use
 those. Otherwise use Claude Opus, GPT Sol, and Gemini Neon through the
 Antigravity CLI (`agy --model gemini-4-neon`).
 
-In T3 Code, use `orchestrator_capabilities` to resolve Claude and GPT, then
-`delegate_task` to start those delegates. Elsewhere, use the harness's
-subagent tools or authenticated provider CLIs for them. Run Gemini in parallel
+In T3 Code, use `orchestrator_capabilities` to resolve the models, then
+`delegate_task` to start one delegate per model in parallel. Elsewhere, use
+the harness's subagent tools or authenticated provider CLIs. Use Gemini Neon
 through `agy`.
 If a council member is unavailable, report it instead of substituting.
 
